@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>KIKOZ CORPORATION</title>
+       <!-- cross browsers compatibility = iska matlab ye ye hai ki mai jo bhi site ya application bna rha hoon wo sabhi browsers pe chalna
+       	chaahiye becouse sabhi brawsers pe alag alg web engine hote hain.-->
+</head>
+
+<body>
+	<!-- body ke andar html 5 me kuch changes kiye gye hain.
+	1 = header part :- isme h1 tag ko daal diya gya hai aur  ye html me body ke andar sabse pehla part hota hai;
+	iske andar images, head tags and many home pages jise front pe rakhna hai  hum ban sakte hain
+
+	2 . section : section ke anar body ka jaan hota hai jo hme dikhta hai; section ke andar sara paragraph daal diya gya hai
+	aur div tg ko bhi hta diya gya hai jo div tag hum pehle likhte the use change karke section kar diya gya hai.
+	isme body ka sara part bnate hain jaise table create karna , form bnaana.  etc.
+
+	3. footer  : - ye body ka last part hai jo sabse niche rahta hai.
+	isme hum site ka copyright mark dalte hain. -->
+      <header>
+      	      <h1>Home</h1>
+      	      <img src="/images/a.jpg"/>
+
+              <nav>
+              	<!--nav tag ka use new home page bnaane ke liye karte hain
+              	jiske andar il or ul tag daalte hain
+              	il ka matlab number wise display karega aur ul ka matlab bina number ka display karega.
+              	and  il or ul ke andar li tag daalte hain jiske andar total page jo upar head me dikhaana hai usko add karte hain
+              	aur phir sara page ka file create karte hain and sabhi page ke file name ko save karke h1 tag se sath likhte hain  -->
+              	<ul>
+              		<li><a href="/index.html">Home</a></li>
+              		<li><a href="/courses.html">Courses</a></li>
+              		<li><a href="/about.html">About</a></li>
+              		<li><a href="/contact.html">Contact</a></li>
+                 </ul>
+              </nav>
+
+
+      </header>
+
+
+
+
+
+
+<section>
+	<!-- section part me hum user name , password aur remember me ka box bnaate hain 
+	insabhi input tag ke sath bnaate hain aur agar box ban gya to pta kaise chlega ki kaun sa box kis kaaam ke liye hai jaise user name ka box
+	alg rahega aur password ka box alg rahega tab hi to client ko pta chalega ki kha kya daalna hai.
+	iske liye hum sabhi input ke liye lebel lgaate hain .
+	aur iske liye hum lebel tag use karte hain jisme sabhi ka name daalte hain jaise ki user name , password ..etc
+
+	aur phir hum 'for' atrributes ka use karte hain aur is se ids banaate hain sabhi levels me hum iska use kar ke ids banaate hain issse sabhi users ka ids unique hota hai.
+	aur input me hum type atrributes ka use karte hain same as for. jis ke kaaran sabhi button pe cursor jaate hi wo select ho jaata hai 
+	aur remember me  pe khi bhi select karne se us pe check mark ban jaata hai -->
+
+ <p>This is <em>Home</em> Page Of <STRONG>KIKOZ Corporation.</STRONG></p>
+
+<form action="/api/login" method="POST">
+
+	<label for="Username">Username :</label>
+	<input type="text" name="username" id="username" /> <br />
+	<label for="Password">Password  :</label>
+	<input type="password" name="password" id="Password" /> <br />
+	<input type="checkbox" name="remember" id="remember">
+	<label for="remember">Remember Me</label> <br />
+
+    <input type="submit" name="loginbutton">
+    <input type="reset" name="cancelbutton">
+</form>
+
+</section>
+<!--footer me hum last part likhte hain jaise ki maine apna copyright google ko btaa ya ki ye site 2017 me bna hai.
+ -->
+<footer>&copy;2017 KIKOZ Corporation;</footer>
+
+</body>
+</html>
+
+
